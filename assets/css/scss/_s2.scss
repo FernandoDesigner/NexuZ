@@ -1,0 +1,93 @@
+.tabs__btn {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 2.5rem;
+}
+.tab{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    position: relative;
+    font-family: $font-semiBold;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: $secondary-color;
+        transition: width .2s ease-in-out;
+
+    }
+    &:hover{
+       
+        &::before{
+            width: 100%;
+        }
+    }
+}
+.container__car{
+    position: relative;
+    background-image: url("../img/luxury_fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    h4{
+        font-size: clamp(30px, 1vw + 2em, 50px);
+    }
+}
+#luxury_color_change{
+    position: relative;
+    background-image: url("../img/luxury1.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: clamp(600px, 70vw - 2rem, 1000px);
+    height: 450px;
+    margin-left: auto;
+    transform: translateY(35px);
+}
+.info__car {
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+    flex: 1;
+}
+.container__btn__change__color {
+    padding: 2em 0;
+}
+.btn_color {
+    width: 45px;
+    height: 45px;
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    &:focus, .active{
+        outline: none;
+        border-color: $secondary-color;
+    }
+}
+.--white-car-color{
+    background-image: url("../img/white-btn-change.avif");
+}
+.--black-car-color{
+    background-image: url("../img/black-btn-change.avif");
+}
+.--red-car-color{
+    background-image: url("../img/red-btn-change.avif");
+}
+.--blue-car-color{
+    background-image: url("../img/blue-btn-change.avif");
+}
+.container__btn__change__color{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}

@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "nunito-regular";
+  src: url("../fonts/Nunito-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nunito-light";
+  src: url("../fonts/Nunito-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nunito-medium";
+  src: url("../fonts/Nunito-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nunito-bold";
+  src: url("../fonts/Nunito-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nunito-semiBold";
+  src: url("../fonts/Nunito-SemiBold.ttf") format("truetype");
+}
+body {
+  font-family: nunito-regular;
+}
+
+li::marker {
+  content: "";
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container_section {
+  padding: 0 clamp(2em, 5vw - 1em, 5em);
+}
+
+.section-lg {
+  min-height: 100vh;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 3;
+  background: #fff;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 clamp(2em, 5vw - 1em, 5em);
+}
+.header__nav > ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.header__nav__url {
+  display: flex;
+  gap: 2em;
+  margin-left: auto;
+}
+.header__nav__url > li {
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+.header__nav__url > li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s ease-in-out;
+}
+.header__nav__url > li:hover::before {
+  width: 100%;
+}
+.header__nav__url > li > a {
+  font-family: nunito-bold;
+  font-size: 11px;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 70px);
+  background-image: url("../img/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home::before {
+  content: "";
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: rgba(0, 0, 0, 0.31);
+  position: absolute;
+}
+
+.container_slogan {
+  color: #fff;
+  z-index: 1;
+  padding: 0 clamp(2em, 5vw - 1em, 5em);
+}
+.container_slogan h1 {
+  font-family: "nunito-bold";
+  font-size: clamp(35px, 6vw - 1em, 4.5em);
+}
+.container_slogan p {
+  font-size: clamp(16px, 2.5vw - 1em, 3.5em);
+}
+
+.tabs__btn {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 2.5rem;
+}
+
+.tab {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  font-family: nunito-semiBold;
+}
+.tab::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s ease-in-out;
+}
+.tab:hover::before {
+  width: 100%;
+}
+
+.container__car {
+  position: relative;
+  background-image: url("../img/luxury_fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container__car h4 {
+  font-size: clamp(30px, 1vw + 2em, 50px);
+}
+
+#luxury_color_change {
+  position: relative;
+  background-image: url("../img/luxury1.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: clamp(600px, 70vw - 2rem, 1000px);
+  height: 450px;
+  margin-left: auto;
+  transform: translateY(35px);
+}
+
+.info__car {
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  flex: 1;
+}
+
+.container__btn__change__color {
+  padding: 2em 0;
+}
+
+.btn_color {
+  width: 45px;
+  height: 45px;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.btn_color:focus, .btn_color .active {
+  outline: none;
+  border-color: #000;
+}
+
+.--white-car-color {
+  background-image: url("../img/white-btn-change.avif");
+}
+
+.--black-car-color {
+  background-image: url("../img/black-btn-change.avif");
+}
+
+.--red-car-color {
+  background-image: url("../img/red-btn-change.avif");
+}
+
+.--blue-car-color {
+  background-image: url("../img/blue-btn-change.avif");
+}
+
+.container__btn__change__color {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */

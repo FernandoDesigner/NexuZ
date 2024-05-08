@@ -1,0 +1,28 @@
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 70px);
+    background-image: url('../img/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before{
+        content: '';
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: rgb(0 0 0 / 31%);
+        position: absolute;
+    }
+}
+.container_slogan {
+    color: $primary-color;
+    z-index: 1;
+    padding: 0 clamp(2em, 5vw - 1em, 5em);
+    h1{
+        font-family: 'nunito-bold';
+        font-size: clamp(35px, 6vw - 1em, 4.5em);
+    }
+    p{
+        font-size: clamp(16px, 2.5vw - 1em, 3.5em);
+    }
+}
