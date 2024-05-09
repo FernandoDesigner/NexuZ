@@ -3,39 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NexuZ - Distribuidora Oficial de Autos Lexus</title>
+    <meta name="description" content="Bienvenido a NexuZ, donde la innovación y la elegancia se encuentran. Descubre nuestra amplia gama de autos Lexus nuevos y usados. ¡Encuentra el auto de tus sueños hoy!">
+    <meta name="keywords" content="NexuZ, Lexus, distribuidora de autos, autos nuevos Lexus, autos usados Lexus, innovación, elegancia">
+    <meta name="author" content="NexuZ">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="canonical" href="https://www.nexuz.com.mx">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Nexuz distribuidora</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <main>
-        <header class="header">
-            <nav class="header__nav">
-                <ul class="header__nav__logo">
-                    <li class="header__nav__logo__container">
-                        <img src="https://www.lexus.mx/etc.clientlibs/lexus/clientlibs/lexus-react/resources/static/media/lexus_logo_english.f525f8b847ba839b2fbe.png"
-                            alt="">
-                    </li>
-                </ul>
+    <main role="main">
+        <header class="header" role="banner">
+            <nav class="header__nav" role="navigation">
                 <ul class="header__nav__url">
-                    <li><a href="">vehiculos</a></li>
-                    <li><a href="">sucursales</a></li>
-                    <li><a href="">contacto</a></li>
+                    <li><a href="#vehiculos">vehiculos</a></li>
+                    <li><a href="#nosotros">nosotros</a></li>
+                    <li><a href="#contacto">contacto</a></li>
 
                 </ul>
             </nav>
         </header>
-        <section class="home">
+        <section class="home" id="home">
             <div class="container_slogan container-fluid">
                 <h1>Bienvenido a NexuZ</h1>
                 <p>Donde la Innovación y la Elegancia se Encuentran</p>
             </div>
 
         </section>
-        <section class="container_section">
+        <section class="container_section" id="vehiculos" role="region" aria-labelledby="vehiculos-heading">
             <div class="container__title_section mt-5 pb-3">
                 <h3 class="text-center">CONOCE NUESTROS NUEVOS MODELOS</h3>
             </div>
@@ -54,22 +63,117 @@
                     </ul>
                 </nav>
                 <div class="viewTab">
-                    <div class="container__car">
-                        <div class="info__car">
-                            <h4>Lexus <strong>ALX</strong></h4>
+                    <div id="LuxuryView">
+                        <div class="container__car">
+                            <div class="info__car">
+                                <h4>Lexus <strong>ALX</strong></h4>
+                            </div>
+                            <div class="container__img__car" id="luxury_color_change">
+                            </div>
                         </div>
-                        <div class="container__img__car" id="luxury_color_change">
+                        <div class="container__btn__change__color">
+                            <button type="button" class="btn_color --white-car-color" id="luxuryWhite"></button>
+                            <button type="button" class="btn_color --black-car-color" id="luxuryBlack"></button>
+                            <button type="button" class="btn_color --red-car-color" id="luxuryRed"></button>
+                            <button type="button" class="btn_color --blue-car-color" id="luxuryBlue"></button>
                         </div>
+                        <span id="colorTxt">White Pearl</span>
                     </div>
-                    <div class="container__btn__change__color">
-                        <button type="button" class="btn_color --white-car-color" id="luxuryWhite"></button>
-                        <button type="button" class="btn_color --black-car-color" id="luxuryBlack"></button>
-                        <button type="button" class="btn_color --red-car-color" id="luxuryRed"></button>
-                        <button type="button" class="btn_color --blue-car-color" id="luxuryBlue"></button>
-                    </div>
+
+                    
                 </div>
             </div>
         </section>
+
+        <section class="container_section mb-5" id="nosotros" role="region" aria-labelledby="nosotros-heading">
+            <div class="container-gallery" role="group" aria-label="Información sobre nosotros">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                        <article class="container__text__column">
+                            <h3 class="--font-teen">Explora el Universo <strong>NexuZ</strong></h3>
+                            <p>Nuestra misión en <strong>NexuZ</strong> es proporcionar a nuestros clientes una
+                                experiencia incomparable
+                                al adquirir un automóvil Lexus. Nos dedicamos a ofrecer un servicio personalizado
+                                excepcional, cuidando cada detalle para garantizar la satisfacción de nuestros clientes
+                                en cada paso del camino</p>
+                        </article>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-flex">
+                        <div class="container__img__column m-auto">
+                            <img src="assets/img/mundoLx.avif" alt="Agencia nexuz">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 d-flex">
+                        <div class="container__img__column m-auto">
+                            <img src="assets/img/agencyLX.avif" alt="Agencia nexuz">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                        <article class="container__text__column">
+                            <h3 class="--font-teen">Atención Detallada <strong>Profesional</strong>
+                            </h3>
+                            <p>Nuestro compromiso es ser más que solo una distribuidora de autos. Nos dedicamos a
+                                brindarte una <strong>experiencia excepcional</strong> desde el primer contacto hasta la
+                                entrega de tu
+                                automóvil. Con un enfoque centrado en ti, nuestro equipo experto está aquí para
+                                ofrecerte asesoramiento personalizado en cada paso del proceso de compra.</p>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="container_section" id="contacto">
+            <div class="container__form">
+                <div class="col-sm-12">
+                    <div class="text__form text-center">
+                        <span>¡Conéctate con nosotros!</span>
+                        <p class="--font-teen">Completa el formulario a continuación y uno de nuestros expertos estará encantado de <br>ponerse
+                            en contacto contigo lo antes posible.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <form action="post">
+                        <div class="row">
+                            <div class="container__data col-sm-12">
+                                <label>Nombre</label>
+                                <input class="form-control" type="text" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="container__data col-sm-12">
+                                <label>Apellidos</label>
+                                <input class="form-control" type="text" placeholder="Ingresa tus Apellidos">
+                            </div>
+                            <div class="container__data col-sm-12">
+                                <label>Numero telefónico</label>
+                                <input class="form-control" type="text" placeholder="Ingresa tu numero telefónico">
+                            </div>
+                            <div class="container__btn-action col-sm-12">
+                                <button class="btn-send" type="button">¡Contactame!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container__url">
+                <nav class="footer__nav">
+                    <ul class="footer__links">
+                        <li class="footer__links__url"><a href="">HOME</a></li>
+                        <li class="footer__links__url"><a href="">NOSOTROS</a></li>
+                        <li class="footer__links__url"><a href="">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="redes">
+
+            </div>
+        </footer>
     </main>
 
 
@@ -78,10 +182,8 @@
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+ 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

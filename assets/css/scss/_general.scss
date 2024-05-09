@@ -18,8 +18,17 @@
     font-family: "nunito-semiBold";
     src: url('../fonts/Nunito-SemiBold.ttf') format("truetype");
 }
+@font-face {
+    font-family: "nunito-extraLight";
+    src: url('../fonts/Nunito-ExtraLight.ttf') format("truetype");
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: nunito-regular; 
+    color:$secondary-color;
+    
 }
 li::marker{
 content:'';
@@ -36,4 +45,16 @@ a{
 }
 .section-lg{
     min-height: 100vh;
+}
+.--font-bold{
+    font-family: $font-bold;
+}
+.--font-teen{
+    font-family: $font-xlight;
+}
+.container__title_section h3{
+    font-size: clamp(28px, 2vw + 0.4em, 3em);
+}
+.container_section{
+    margin: 3rem 0;
 }

@@ -1,0 +1,21 @@
+.container__img__column img {
+    width: 100%;
+}
+.container__text__column {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    h3{
+        margin: 1rem 0;
+        font-size: clamp(28px, 3vw + 0.25em, 3.2em );
+    }
+    p{
+        font-size: 18px;
+    }
+}
+.container-gallery {
+    padding: 1rem 0;
+    > .row{
+      margin: 4rem 0;  
+    }
+}

@@ -18,8 +18,17 @@
   font-family: "nunito-semiBold";
   src: url("../fonts/Nunito-SemiBold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "nunito-extraLight";
+  src: url("../fonts/Nunito-ExtraLight.ttf") format("truetype");
+}
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: nunito-regular;
+  color: #000;
 }
 
 li::marker {
@@ -42,6 +51,22 @@ a:hover {
   min-height: 100vh;
 }
 
+.--font-bold {
+  font-family: nunito-bold;
+}
+
+.--font-teen {
+  font-family: nunito-extraLight;
+}
+
+.container__title_section h3 {
+  font-size: clamp(28px, 2vw + 0.4em, 3em);
+}
+
+.container_section {
+  margin: 3rem 0;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -58,13 +83,12 @@ a:hover {
 }
 .header__nav > ul {
   padding: 0;
-  margin-bottom: 0;
 }
 
 .header__nav__url {
   display: flex;
   gap: 2em;
-  margin-left: auto;
+  margin: auto;
 }
 .header__nav__url > li {
   position: relative;
@@ -85,7 +109,7 @@ a:hover {
 }
 .header__nav__url > li > a {
   font-family: nunito-bold;
-  font-size: 11px;
+  font-size: clamp(11px, 0.5vw + 5px, 14px);
 }
 
 .home {
@@ -93,9 +117,11 @@ a:hover {
   display: flex;
   align-items: center;
   height: calc(100vh - 70px);
-  background-image: url("../img/home.jpg");
+  margin-bottom: 5rem;
+  background-image: url("../img/homebg.avif");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .home::before {
   content: "";
@@ -143,6 +169,10 @@ a:hover {
 }
 .tab:hover::before {
   width: 100%;
+}
+.tab.active {
+  font-family: nunito-bold;
+  transform: scale(1.15);
 }
 
 .container__car {
@@ -192,7 +222,7 @@ a:hover {
   background-position: center;
   background-size: 100%;
 }
-.btn_color:focus, .btn_color .active {
+.btn_color:focus, .btn_color.active {
   outline: none;
   border-color: #000;
 }
@@ -217,6 +247,102 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 1em;
+}
+
+#colorTxt {
+  font-family: "nunito-semiBold";
+}
+
+.container__img__column img {
+  width: 100%;
+}
+
+.container__text__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.container__text__column h3 {
+  margin: 1rem 0;
+  font-size: clamp(28px, 3vw + 0.25em, 3.2em);
+}
+.container__text__column p {
+  font-size: 18px;
+}
+
+.container-gallery {
+  padding: 1rem 0;
+}
+.container-gallery > .row {
+  margin: 4rem 0;
+}
+
+.text__form span {
+  font-size: clamp(20px, 5vw - 2em, 40px);
+  font-family: "nunito-bold";
+}
+.text__form p {
+  font-size: 18px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+form > .row {
+  gap: 1em;
+}
+
+.container__data label {
+  margin-bottom: 0.2rem;
+  font-family: nunito-semiBold;
+}
+
+.form-control {
+  box-shadow: none;
+  border: 1px solid #a8a8a8;
+  min-height: 42px;
+  transition: all 0.3s ease;
+}
+.form-control:focus, .form-control:hover {
+  box-shadow: none;
+  border-color: #000;
+  transition: all 0.3s ease;
+}
+
+.container__btn-action {
+  padding: 0 0.5em;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-send {
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #000;
+  width: 100%;
+  max-width: 130px;
+  padding: 0.5em;
+  font-size: 14px;
+  font-family: "nunito-semiBold";
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn-send:hover, .btn-send:focus {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer {
+  min-height: 60vh;
+  background-color: #000;
+}
+
+.footer__links__url a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

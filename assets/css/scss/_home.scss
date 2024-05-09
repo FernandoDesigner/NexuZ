@@ -3,9 +3,11 @@
     display: flex;
     align-items: center;
     height: calc(100vh - 70px);
-    background-image: url('../img/home.jpg');
+    margin-bottom: 5rem;
+    background-image: url('../img/homebg.avif');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     &::before{
         content: '';
         width: 100%;

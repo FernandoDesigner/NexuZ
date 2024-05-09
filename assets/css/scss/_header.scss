@@ -12,13 +12,12 @@
     padding: 0 clamp(2em, 5vw - 1em, 5em);
     > ul{
         padding: 0;
-        margin-bottom: 0;
     }
 }
 .header__nav__url {
     display: flex;
     gap: 2em;
-    margin-left: auto;
+    margin: auto;
     >li{
         position: relative;
         text-transform: uppercase;
@@ -41,7 +40,7 @@
         }
         > a{
             font-family: $font-bold;
-            font-size: 11px;
+            font-size: clamp(11px, .5vw + 5px, 14px);
 
         }
     }
