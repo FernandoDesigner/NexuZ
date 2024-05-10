@@ -31,7 +31,7 @@
         transform: scale(1.15);
     }
 }
-.container__car{
+.container__car, .--sportView{
     position: relative;
     background-image: url("../img/luxury_fondo.jpg");
     background-repeat: no-repeat;
@@ -44,6 +44,13 @@
         font-size: clamp(30px, 1vw + 2em, 50px);
     }
 }
+.--sportView{
+    background-image: url("../img/sport_fondo.jpg");
+}
+
+.--suvView{
+    background-image: url("../img/suv_fondo.jpg");
+}
 #luxury_color_change{
     position: relative;
     background-image: url("../img/luxury1.avif");
@@ -53,7 +60,29 @@
     width: clamp(600px, 70vw - 2rem, 1000px);
     height: 450px;
     margin-left: auto;
-    transform: translateY(35px);
+    
+}
+#Sport_color_change{
+    position: relative;
+    background-image: url("../img/sport1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: clamp(600px, 70vw - 2rem, 1000px);
+    height: 450px;
+    margin-left: auto;
+   
+}
+#Suv_color_change{
+    position: relative;
+    background-image: url("../img/suv1.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: clamp(600px, 70vw - 2rem, 1000px);
+    height: 450px;
+    margin-left: auto;
+   
 }
 .info__car {
     padding: 2rem;
@@ -81,15 +110,22 @@
 .--white-car-color{
     background-image: url("../img/white-btn-change.avif");
 }
-.--black-car-color{
+.--black-car-color, .--black-car-color-sp, .--black-car-color-suv {
     background-image: url("../img/black-btn-change.avif");
 }
-.--red-car-color{
+.--red-car-color, .--red-car-color-sp, .--red-car-color-suv{
     background-image: url("../img/red-btn-change.avif");
 }
-.--blue-car-color{
+.--blue-car-color, .--blue-car-color-sp, .--blue-car-color-suv{
     background-image: url("../img/blue-btn-change.avif");
 }
+.--yellow-car-color-sp{
+    background-image: url("../img/yellow-btn-change.avif");
+}
+.--orange-car-color-suv{
+    background-image: url("../img/orange-btn-change.avif");
+}
+
 .container__btn__change__color{
     display: flex;
     align-items: center;

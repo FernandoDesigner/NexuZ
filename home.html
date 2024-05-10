@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NexuZ - Distribuidora Oficial de Autos Lexus</title>
-    <meta name="description" content="Bienvenido a NexuZ, donde la innovación y la elegancia se encuentran. Descubre nuestra amplia gama de autos Lexus nuevos y usados. ¡Encuentra el auto de tus sueños hoy!">
-    <meta name="keywords" content="NexuZ, Lexus, distribuidora de autos, autos nuevos Lexus, autos usados Lexus, innovación, elegancia">
+    <meta name="description"
+        content="Bienvenido a NexuZ, donde la innovación y la elegancia se encuentran. Descubre nuestra amplia gama de autos Lexus nuevos y usados. ¡Encuentra el auto de tus sueños hoy!">
+    <meta name="keywords"
+        content="NexuZ, Lexus, distribuidora de autos, autos nuevos Lexus, autos usados Lexus, innovación, elegancia">
     <meta name="author" content="NexuZ">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -20,8 +22,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -63,24 +65,79 @@
                     </ul>
                 </nav>
                 <div class="viewTab">
-                    <div id="LuxuryView">
+                    <div class="view" id="LuxuryView">
                         <div class="container__car">
-                            <div class="info__car">
+                            <div class="info__car fade-right">
                                 <h4>Lexus <strong>ALX</strong></h4>
                             </div>
-                            <div class="container__img__car" id="luxury_color_change">
+                            <div class="container__img__car fade-left" id="luxury_color_change">
                             </div>
                         </div>
                         <div class="container__btn__change__color">
-                            <button type="button" class="btn_color --white-car-color" id="luxuryWhite"></button>
-                            <button type="button" class="btn_color --black-car-color" id="luxuryBlack"></button>
-                            <button type="button" class="btn_color --red-car-color" id="luxuryRed"></button>
-                            <button type="button" class="btn_color --blue-car-color" id="luxuryBlue"></button>
+                            <button type="button" class="btn_color --white-car-color" id="luxuryWhite"
+                                data-colortxt="#colorTxt" data-colorchange="#luxury_color_change"
+                                data-colorname="White Pearl" data-imageurl="assets/img/luxury1.avif"></button>
+                            <button type="button" class="btn_color --black-car-color" id="luxuryBlack"
+                                data-colortxt="#colorTxt" data-colorchange="#luxury_color_change"
+                                data-colorname="Obsidian" data-imageurl="assets/img/luxuryBlack.avif"></button>
+                            <button type="button" class="btn_color --red-car-color" id="luxuryRed"
+                                data-colortxt="#colorTxt" data-colorchange="#luxury_color_change"
+                                data-colorname="Lava red" data-imageurl="assets/img/luxuryRed.avif"></button>
+                            <button type="button" class="btn_color --blue-car-color" id="luxuryBlue"
+                                data-colortxt="#colorTxt" data-colorchange="#luxury_color_change"
+                                data-colorname="Midnight blue" data-imageurl="assets/img/luxuryBlue.avif"></button>
                         </div>
+
                         <span id="colorTxt">White Pearl</span>
                     </div>
-
-                    
+                    <div class="view hide" id="SportView">
+                        <div class="container__car --sportView">
+                            <div class="info__car">
+                                <h4>Lexus <strong>Axg spyder</strong></h4>
+                            </div>
+                            <div class="container__img__car" id="Sport_color_change">
+                            </div>
+                        </div>
+                        <div class="container__btn__change__color">
+                            <button type="button" class="btn_color --yellow-car-color-sp" id="sportYellow"
+                                data-colortxt="#colorTxtv" data-colorchange="#Sport_color_change"
+                                data-colorname="Naples Yellow" data-imageurl="assets/img/sport1.png"></button>
+                            <button type="button" class="btn_color --black-car-color-sp" id="sportBlack"
+                                data-colortxt="#colorTxtv" data-colorchange="#Sport_color_change"
+                                data-colorname="Obsidian" data-imageurl="assets/img/sportBlack.png"></button>
+                            <button type="button" class="btn_color --red-car-color-sp" id="sportRed"
+                                data-colortxt="#colorTxtv" data-colorchange="#Sport_color_change"
+                                data-colorname="Lava red" data-imageurl="assets/img/sportRed.png"></button>
+                            <button type="button" class="btn_color --blue-car-color-sp" id="sportBlue"
+                                data-colortxt="#colorTxtv" data-colorchange="#Sport_color_change"
+                                data-colorname="Midnight blue" data-imageurl="assets/img/sportBlue.png"></button>
+                        </div>
+                        <span id="colorTxtv">Naples Yellow</span>
+                    </div>
+                    <div class="view hide" id="SubView">
+                        <div class="container__car --suvView">
+                            <div class="info__car">
+                                <h4>Lexus <strong>NH90R</strong></h4>
+                            </div>
+                            <div class="container__img__car" id="Suv_color_change">
+                            </div>
+                        </div>
+                        <div class="container__btn__change__color">
+                            <button type="button" class="btn_color --orange-car-color-suv" id="suvYellow"
+                                data-colortxt="#colorTxtv2" data-colorchange="#Suv_color_change"
+                                data-colorname="Cadmium Orange" data-imageurl="assets/img/suv1.avif"></button>
+                            <button type="button" class="btn_color --black-car-color-suv" id="suvBlack"
+                                data-colortxt="#colorTxtv2" data-colorchange="#Suv_color_change"
+                                data-colorname="Obsidian" data-imageurl="assets/img/suvBlack.avif"></button>
+                            <button type="button" class="btn_color --red-car-color-suv" id="suvRed"
+                                data-colortxt="#colorTxtv2" data-colorchange="#Suv_color_change"
+                                data-colorname="Lava red" data-imageurl="assets/img/suvRed.avif"></button>
+                            <button type="button" class="btn_color --blue-car-color-suv" id="suvBlue"
+                                data-colortxt="#colorTxtv2" data-colorchange="#Suv_color_change"
+                                data-colorname="Midnight blue" data-imageurl="assets/img/suvBlue.avif"></button>
+                        </div>
+                        <span id="colorTxtv2">Naples Yellow</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -100,7 +157,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6 d-flex">
                         <div class="container__img__column m-auto">
-                            <img src="assets/img/mundoLx.avif" alt="Agencia nexuz">
+                            <img class="zoom-in" src="assets/img/mundoLx.avif" alt="Agencia nexuz">
                         </div>
                     </div>
                 </div>
@@ -108,7 +165,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6 d-flex">
                         <div class="container__img__column m-auto">
-                            <img src="assets/img/agencyLX.avif" alt="Agencia nexuz">
+                            <img class="zoom-in" src="assets/img/agencyLX.avif" alt="Agencia nexuz">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 d-flex align-items-center">
@@ -131,7 +188,8 @@
                 <div class="col-sm-12">
                     <div class="text__form text-center">
                         <span>¡Conéctate con nosotros!</span>
-                        <p class="--font-teen">Completa el formulario a continuación y uno de nuestros expertos estará encantado de <br>ponerse
+                        <p class="--font-teen">Completa el formulario a continuación y uno de nuestros expertos estará
+                            encantado de <br>ponerse
                             en contacto contigo lo antes posible.</p>
                     </div>
                 </div>
@@ -161,18 +219,100 @@
         </section>
 
         <footer class="footer">
-            <div class="container__url">
-                <nav class="footer__nav">
-                    <ul class="footer__links">
-                        <li class="footer__links__url"><a href="">HOME</a></li>
-                        <li class="footer__links__url"><a href="">NOSOTROS</a></li>
-                        <li class="footer__links__url"><a href="">CONTACTO</a></li>
-                    </ul>
-                </nav>
+            <div class="d-flex align-items-center w-100 flex-wrap">
+                <div class="col-sm-12 col-md-4">
+                    <div class="footer__logo__container">
+                        <img src="assets/img/logo.svg" alt="Nexuz agencia">
+                        <span>NexuZ</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="container__url">
+                        <nav class="footer__nav">
+                            <ul class="footer__links">
+                                <li class="footer__links__url"><a href="#home">HOME</a></li>
+                                <li class="footer__links__url"><a href="#nosotros">NOSOTROS</a></li>
+                                <li class="footer__links__url"><a href="#contacto">CONTACTO</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <nav class="redes">
+                        <ul>
+                            <li class="red_link">
+                                <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512"
+                                    xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3 v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2 c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>Nexuz</span>
+                            </li>
+                            <li class="red_link">
+                                <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512"
+                                    xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <path
+                                                d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8 c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z">
+                                            </path>
+                                            <polygon
+                                                points="211.4,345.9 211.4,308.1 211.4,302.5 205.8,302.5 168,302.6 168.2,346 ">
+                                            </polygon>
+                                            <path
+                                                d="M183,401c0,38.6-31.4,70-70,70c-38.6,0-70-31.4-70-70c0-9.3,1.9-18.2,5.2-26.3H10v104.8C10,493,21,504,34.5,504h157 c13.5,0,24.5-11,24.5-24.5V374.7h-38.2C181.2,382.8,183,391.7,183,401z">
+                                            </path>
+                                            <path
+                                                d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,374.7v104.8 c0,27.3-22.2,49.5-49.5,49.5h-157C7.2,529-15,506.8-15,479.5V374.7v-52.3c0-27.3,22.2-49.5,49.5-49.5h157 c27.3,0,49.5,22.2,49.5,49.5V374.7z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>Nexuz</span>
+                            </li>
+                            <li class="red_link">
+                                <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                                    <rect width="20" height="20" fill="#000"></rect>
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <title>whatsapp [#128]</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <defs></defs>
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Dribbble-Light-Preview"
+                                                transform="translate(-300.000000, -7599.000000)" fill="#fff">
+                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                    <path
+                                                        d="M259.821,7453.12124 C259.58,7453.80344 258.622,7454.36761 257.858,7454.53266 C257.335,7454.64369 256.653,7454.73172 254.355,7453.77943 C251.774,7452.71011 248.19,7448.90097 248.19,7446.36621 C248.19,7445.07582 248.934,7443.57337 250.235,7443.57337 C250.861,7443.57337 250.999,7443.58538 251.205,7444.07952 C251.446,7444.6617 252.034,7446.09613 252.104,7446.24317 C252.393,7446.84635 251.81,7447.19946 251.387,7447.72462 C251.252,7447.88266 251.099,7448.05372 251.27,7448.3478 C251.44,7448.63589 252.028,7449.59418 252.892,7450.36341 C254.008,7451.35771 254.913,7451.6748 255.237,7451.80984 C255.478,7451.90987 255.766,7451.88687 255.942,7451.69881 C256.165,7451.45774 256.442,7451.05762 256.724,7450.6635 C256.923,7450.38141 257.176,7450.3464 257.441,7450.44643 C257.62,7450.50845 259.895,7451.56477 259.991,7451.73382 C260.062,7451.85686 260.062,7452.43903 259.821,7453.12124 M254.002,7439 L253.997,7439 L253.997,7439 C248.484,7439 244,7443.48535 244,7449 C244,7451.18666 244.705,7453.21526 245.904,7454.86076 L244.658,7458.57687 L248.501,7457.3485 C250.082,7458.39482 251.969,7459 254.002,7459 C259.515,7459 264,7454.51465 264,7449 C264,7443.48535 259.515,7439 254.002,7439"
+                                                        id="whatsapp-[#128]" style="
+    stroke: #000;
+"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>+52 55 55 55 55</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="redes">
 
-            </div>
+
+
+
         </footer>
     </main>
 
@@ -182,8 +322,8 @@
 
 
 
-<script src="assets/js/main.js"></script>
- 
+    <script src="assets/js/main.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

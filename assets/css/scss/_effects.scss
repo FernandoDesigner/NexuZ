@@ -1,0 +1,30 @@
+.fade-up, .fade-right, .fade-left, .zoom-in {
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
+  
+  .fade-right, .fade-left {
+    transition: opacity .4s ease, transform .4s ease;
+  }
+  
+  .zoom-in {
+    transition: opacity .4s ease, transform .4s ease;
+  }
+  
+  .fade-right {
+    transform: translateX(-30px);
+  }
+  
+  .fade-left {
+    transform: translateX(30px);
+  }
+  
+  .zoom-in {
+    transform: scale(0.8);
+  }
+  
+  .fade-up.active, .fade-right.active, .fade-left.active, .zoom-in.active {
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+  

@@ -1,8 +1,95 @@
-.footer{
-    min-height: 60vh;
+.footer {
+    min-height: 400px;
     background-color: $secondary-color;
+    display: flex;
+    align-items: center;
 }
-.footer__links__url a{
+
+.footer__links__url a {
     color: $primary-color;
+    font-size: clamp(16px, 3vw + 0.2em, 30px);
+    font-family: 'nunito-extraLight';
+
+}
+
+.footer__logo__container {
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: clamp(100px, 8vw + 3rem, 400px);
+    }
+
+    span {
+        font-size: clamp(35px, 5vw + 1rem, 50px);
+        font-family: 'nunito-extraLight';
+        margin-top: -1vw;
+    }
+}
+.footer__links {
+    margin-bottom: 0;
+    padding-left: 0;
+    >li a{
+        position: relative;
+        text-transform: uppercase;
+        transition: all .2s ease-in-out;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: $primary-color;
+            transition: width .2s ease-in-out;
+
+        }
+        &:hover{
+           
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.footer__links__url {
+    margin-bottom: 1rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
     
+
+}
+.container__url {
+    margin-top: 3.5vw;
+}
+.footer__nav {
+    display: flex;
+    justify-content: center;
+}
+.red_link svg {
+    width: clamp(40px, 5vw - 1em, 50px);
+    fill: $primary-color;
+}
+.red_link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "nunito-extraLight";
+    span{
+        display: block;
+    }
+}
+.redes{
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 3.5vw;
+    }
+
 }
